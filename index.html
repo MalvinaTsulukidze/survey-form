@@ -1,0 +1,95 @@
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Capriola' rel='stylesheet'>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="title">Survey Form</h1>
+        </header>
+    </main>
+    <form id="survey-form">
+        <div class="input-container">
+            <label id="name-label" for="name">Name</label><br>
+            <input id="name" type="text" placeholder="enter your name">
+        </div>
+        <div class="input-container">
+            <label id="email-label" for="email">Email</label><br>
+            <input id="email" type="email" placeholder="email@example.com">
+        </div>
+        <div class="input-container">
+            <label id="number-label" for="number">Age</label><br>
+            <input id="number" type="number" placeholder="enter your age" min="13" max="100">
+        </div>
+        <div class="input-container">
+            <label for="dropdown">Education</label><br>
+            <select id="dropdown" name="who">
+                <option value="" disabled="" selected=""></option>
+                <option value="school">School</option>
+                <option value="bachlor">Bachelor's degree</option>
+                <option value="master">Master's degree</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="input-container">
+            <label>Gender</label>
+        </div>
+        <div class="input-container radio-container">      
+            <label for="male">
+                <input id="male" type="radio" name="gender" value="male"> Male
+            </label>
+            <br>
+            <label for="female">
+                <input id="female" type="radio" name="gender" value="female"> Female
+            </label>
+        </div>
+
+        <div class="input-container">
+            <label>Choose your favorite anime!</label>
+        </div>
+        <div class="input-container checkbox-container">
+            <label>
+                <input id="spiritedaway" type="checkbox" name="source" value="Spirited Away" > Spirited Away
+            </label>
+            <label>
+                <input id="castle" type="checkbox" name="source" value="Howl's Moving Castle"> Howl's Moving Castle
+            </label>
+            <label>
+                <input id="mononoke" type="checkbox" name="source" value="Princess Mononoke"> Princess Mononoke
+            </label>
+            <label>
+                <input id="kiki" type="checkbox" name="source" value="Kiki's Delivery Service"> Kiki's Delivery Service
+            </label>
+            <label>
+                <input id="sky" type="checkbox" name="source" value="Castle in The Sky"> Castle in The Sky
+            </label>
+            <label>
+                <input id="arrietty" type="checkbox" name="source" value="The Secret World of Arrietty"> Secret World of Arrietty
+            </label>
+            <label>
+                <input id="totoro" type="checkbox" name="source" value="My Neighbor Totoro"> My Neighbor Totoro
+            </label>
+            <label> 
+                <input id="ponyo" type="checkbox" name="source" value="Ponyo"> Ponyo
+            </label>
+            <label> 
+                <input id="other" type="checkbox" name="source" value="Other"> Other
+            </label>
+        </div>
+        
+
+        <div class="input-container textarea">
+            <label for="textarea">Tell more about your favorite Ghibli Studio's work!</label>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>     
+        </div>
+        <div class="input-container btn">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+    </form>
+    <footer>
+        <a href="https://www.studioghibli.com.au/" style="color:white">https://www.studioghibli.com.au/</a>
+    </footer>
+</body>
+</html>
